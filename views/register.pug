@@ -1,0 +1,30 @@
+extends header
+
+block content
+	section(class='hero is-success is-fullheight')
+		.hero-body
+			div(class='container has-text-centered')
+				div(class='column is-4 is-offset-4')
+					h3(class='title has-text-grey') Register
+					p(class='subtitle has-text-grey') Be part of the fun!
+					.box
+						form(action='/user/register', method='POST')
+							.field
+								.control
+									input(class='input is-large' type='email' name='email' placeholder='Your Email' autofocus='')
+
+							.field
+								.control
+									input(class='input is-large' type='password' name='password' placeholder='Your Password')
+			  
+							.field
+								.control
+									input(class='input is-large' type='text' name='username' placeholder='Your Username')
+							
+							.field
+								.control
+									input(class='button is-block is-info is-large' value='Register' type='submit')
+
+					p(class='has-text-grey')
+						span Already have an account? &nbsp;
+							a(href='/login' class='has-text-weight-semibold is-link is-size-4') Login!

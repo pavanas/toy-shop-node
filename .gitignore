@@ -57,3 +57,7 @@ typings/
 # dotenv environment variables file
 .env
 
+m_keys.json
+
+mail_keys.json
+

@@ -1,0 +1,17 @@
+extends header
+
+block content
+	section(class='container')
+		div(class='columns features is-mobile is-multiline')
+			each product in products
+				div(class='column is-3')
+					.card
+						div(class='card-image has-text-centered')
+							figure(class='image is-4by3')
+								img(src='http://placehold.it/400x300' alt='Description')
+					.card-content
+						.content
+							h4 #{product.name}
+							p #{product.description}
+							p
+								a(href="product/"+product._id) View Product

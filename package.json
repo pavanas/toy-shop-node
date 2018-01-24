@@ -1,0 +1,35 @@
+{
+  "name": "node-toy-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "connect-mongo": "^2.0.1",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mailgun-js": "^0.14.1",
+    "mongodb": "^3.0.1",
+    "mongoose": "^5.0.0",
+    "node-fetch": "^1.7.3",
+    "pug": "^2.0.0-rc.4",
+    "ws": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es6": true
+    }
+  }
+}

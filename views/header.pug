@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title ToyShop app
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css')
+    link(rel='stylesheet', href='/public/shop.css')
+  body
+    nav.navbar
+        .container
+            .navbar-brand
+                a.navbar-item(href='/')
+                    img(src='', alt='logo')
+            .navbar-menu
+                .navbar-end
+                    .navbar-item
+                        div(class='field is-grouped')
+                            if loggedin
+                                p.control
+                                    a(class='button is-success', href='/admin/' + user) #{name}  
+                                p.control
+                                    a(class='button is-light', href='/user/logout') Logout
+                            else
+                                p.control
+                                    a(class='button is-success', href='/login') Login   
+                                p.control
+                                    a(class='button is-light', href='/register') Register
+    block content
